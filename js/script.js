@@ -2,9 +2,12 @@
   $(function(){
 
         var slider = $('#slider').bxSlider({
-                controls: false,
                 mode: 'fade',
                 auto: true,
+				nextSelector: '#slider-next',
+				prevSelector: '#slider-previous',
+				nextText: '<img src="images/next-arrow.png" />',
+				prevText: '<img src="images/previous-arrow.png" />',
                 onAfterSlide: function(currentSlide, totalSlides){
                   $('.slide-pager a').removeClass('pager-active');
                   $('.slide-pager a').eq(currentSlide).addClass('pager-active');

@@ -18,7 +18,6 @@
 		<link rel="stylesheet" href="css/reveal.css" type="text/css" media="screen" />
 		<link rel="stylesheet" href="css/media.css" type="text/css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="jqtransformplugin/jqtransform.css" />
-		<link rel="stylesheet" type="text/css" href="formValidator/validationEngine.jquery.css" />
 	
 		<!-- Load Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900' rel='stylesheet' type='text/css'>
@@ -45,73 +44,28 @@
 			<div class="site-container">
 				
 				<a href="/">
-					<img id="logo" src="images/logo.png" alt="SkyAirtime">
+					<div id="logo"></div>
 				</a>
 				
-				<div id="contact-info">
-					<h5>(866) 532-1118 or support@skyairtime.com</h5>
-				</div>
+				<nav>
+						<ul id="primary">
+								<li><a href=""> Product </a></li>
+								<li><a href=""> Help </a></li>
+								<li><a href=""> Contact </a></li>
+						</ul>
+						
+						<div id="mobile-nav"></div>
+						
+				</nav>
 				
 			</div>
 			
 		</header>
 					
-		<section id="sub-header">
-			
-			<div class="site-container">
-				
-				<nav>
-					<ul>
-						<li><a href="">Product</a></li>
-						<li><a href="">Company</a></li>
-						<li><a href="">Contact Us</a></li>
-						<li><a href="">Help</a></li>
-					</ul>
-				</nav>
-			
-			</div>
-			
-		</section>
-		
-		<div id="subhead-divider"></div>
 			
 		<section id="top-half">
 			
 			<div class="site-container">
-				
-				<div id="demo-form">
-					
-					<div id="demo-form-title">
-						<h3>GET A DEMO NOW!</h3>
-					</div>
-					
-					<div id="response"></div>
-					
-					<div id="sub-response"></div>
-					
-					<form method="post" action="mail.php" id="get-demo-form">
-						
-						<fieldset>
-							<div class="half-field">
-								<input type="text" name="name" placeholder="name" id="name" />
-							</div>
-							<div class="half-field">
-								<input type="text" name="phone" placeholder="phone" id="phone" />
-							</div>
-							<div class="full-field">
-								<input type="textarea" name="email" placeholder="email" id="email" />
-							</div>
-							<div class="full-field">
-								<textarea rows="4" cols="50" type="textarea" name="message" id="message" style="overflow:hidden;" />  </textarea>
-							</div>
-								
-						</fieldset>
-						
-						<button  type="submit" id="sendmail" name="sendmail" value="Submit">Start Your Demo!</button>
-						
-					</form>
-					
-				</div>
 				
 				<div id="slider-wrapper">
 				
@@ -119,21 +73,18 @@
 					
 						<li>	
 							<div class="title">Enjoy SkyAirtime Efficiency</div>
-							<div class="slider-hr"></div>
 							<div class="desc">Come experience SkyAirtime and let us save you money on your dialer termination with unlimited capacity and great quality!</div>
 							<div class="sub-desc">We have bridged the gap between service providers and customers with our fully redundant, multi-geographic failover and load-balanced tier-1 termination network that saves you money, and guarantees quality.</div>
 						</li>
 						
 						<li>	
 							<div class="title">Save with SkyAirtime Dialer</div>
-							<div class="slider-hr"></div>
 							<div class="desc">SkyAirtime harnesses the power of the collective. With billions of minutes and calls ran through our network yearly, we bring the cost effectiveness and quality to the table for anyone seeking termination. In short, we have developed our own industry-leading technology, allowing us to pass off cost savings to customers!</div>
 							<div class="sub-desc">SkyAirtime delivers calls on it's own network, not through a reseller. This means that you will get the best quality, lowest call delay, and the most cost effective option available, for any size carrier!</div>
 						</li>
 						
 						<li>	
 							<div class="title">You'll Love the Easy Setup</div>
-							<div class="slider-hr"></div>
 							<div class="desc">We value our customers, plain and simple. The SkyAirtime experience starts in our setup phase. You will be greated with a single-point-of-contact Account Manager!</div>
 							<div class="sub-desc">Setup and Interoperation with SkyAirtime happens in hours, not days or weeks! You will be up and running in less than one business day!</div>
 						</li>
@@ -142,6 +93,34 @@
 					
 				</div>
 				
+				<div id="contact-form">
+						
+				    <div id="contact-text">
+						<h2>Get a free demo today!</h2>
+				     </div>
+						
+					<form method="post" action="http://drew-parker.com/skymail.php" id="get-demo-form">
+						
+						<fieldset>
+								<input type="text" name="Name" placeholder="name" id="name" />
+								<input type="text" name="Email" placeholder="email" id="email" />
+								<input type="text" name="Phone" placeholder="phone" id="phone" />	
+						</fieldset>
+						
+						<button  type="submit" id="sendmail" name="submit" value="Submit">Start Your Demo!</button>
+						
+					</form>
+					
+				</div>
+				
+				<div id="paginator">
+					<a href="" id="slider-previous"></a>
+					<a href="" id="slider-next"></a>
+				</div>
+				
+				<div class="bx-pager bx-default-pager"></div>
+
+				
 			</div>
 			
 		</section>
@@ -149,16 +128,8 @@
 		<section id="mid-strip">
 			
 			<div class="site-container">
-				
-				<div id="guaranteed">
-					<h2></h2>
-				</div>	
-				
-				<ul class="slide-pager">
-					<li><a href=""><h2>THE BENEFITS</h2></a></li>
-					<li><a href=""><h2>THE NETWORK</h2></a></li>
-					<li><a href=""><h2>THE SETUP</h2></a></li>
-				</ul>
+		
+				<h2>Enjoy our easy setup process and competitive pricing!</h2><h3>CALL 1 (866) 532-1118 FOR A DEMO</h3>
 			
 			</div>
 			
@@ -270,22 +241,6 @@
 		<script src="js/modernizr.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/ajax.js"></script>
-		
-		<script type="text/javascript" src="//assets.zendesk.com/external/zenbox/v2.5/zenbox.js"></script>
-		<style type="text/css" media="screen, projection">
-		  @import url(//assets.zendesk.com/external/zenbox/v2.5/zenbox.css);
-		</style>
-		<script type="text/javascript">
-		  if (typeof(Zenbox) !== "undefined") {
-			Zenbox.init({
-			  dropboxID:   "20105573",
-			  url:         "https://drewparker.zendesk.com",
-			  tabID:       "Support",
-			  tabColor:    "#466594",
-			  tabPosition: "Left"
-			});
-		  }
-		</script>
 		
 	</body>
 
