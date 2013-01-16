@@ -200,8 +200,8 @@ nav ul {
 
 nav ul li {
     float:left;
-    padding-left: 5px;
-    padding-right:5px;
+    padding-left: 12px;
+    padding-right:12px;
     border-right: 1px solid #bfbfbf;
     height: 17px;
     font-size: 17px;
@@ -267,12 +267,72 @@ header {
 }
 
 #top-content-overlay {
-    background: url(../images/top-content-image-overlay.png);
-    width: 930px;
-    height: 380px;
+    background: url(../images/top-overlay-1.png);
+    width: 1002px;
+    height: 378px;
     float: right;
     z-index: 4;
-    
+}
+
+#top-content-overlay-2 {
+    background: url(../images/top-overlay-2.png);
+    width: 1002px;
+    height: 378px;
+    float: right;
+    z-index: 4;
+}
+
+#top-content-overlay-3 {
+    background: url(../images/top-overlay-3.png);
+    width: 1002px;
+    height: 378px;
+    float: right;
+    z-index: 4;
+}
+
+#top-content-overlay-4 {
+    background: url(../images/top-overlay-4.png);
+    width: 1002px;
+    height: 378px;
+    float: right;
+    z-index: 4;
+}
+
+#top-content-overlay-5 {
+    background: url(../images/top-overlay-5.png);
+    width: 1002px;
+    height: 378px;
+    float: right;
+    z-index: 4;
+}
+
+#learn-more {
+    width: 608px;
+    height: 72px;
+    background: url(../images/learn-more-bg.png);
+    margin-top: 15px;
+}
+
+#learn-more h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 29px;
+    font-weight: 700;
+    color: #4a72af;
+    margin: 15px 0px 0px 20px;
+    float: left;
+}
+
+.learn-more-btn {
+  background: url(../images/learn-more-btn.png) 0px 0px no-repeat;
+  width:195px;
+  height: 48px;
+  float:right;
+  cursor: pointer;
+  margin: 12px 10px 0px 0px;
+}
+
+.learn-more-btn:hover {
+  background-position: 0px -49px;
 }
 
 #contact-form {
@@ -395,7 +455,7 @@ button {
 #slider-wrapper {
     width: 610px;
     float: left;
-    margin: 20px 0px 0px 0px;
+    margin: -360px 0px 0px 0px;
     z-index: 99999999;
     overflow: hidden;
     height:100%;
@@ -413,7 +473,7 @@ ul#slider li {
 
 ul#slider .title {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 34px;
+    font-size: 38px;
     font-weight: 700;
     color: #fff;
     text-shadow: 0 0 2px rgba(0,0,0,.75);
@@ -440,7 +500,7 @@ ul#slider .title {
 
 ul#slider .desc {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 400;
     color: #f4e7c3;
     text-shadow: 0 0 1px rgba(0,0,0,.49);
@@ -450,7 +510,7 @@ ul#slider .desc {
 ul#slider .sub-desc {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     color: #e8f1ff;
     text-shadow: 0 0 1px rgba(0,0,0,.49);
     margin: 8px 0px 0px 0px;
@@ -566,29 +626,39 @@ ul.slide-pager h2 {
 }
 
 #bottom-half {
-    overflow: hidden;
     border-top: 1px solid #19417b;
+    width: 100%;
+    min-height: 100%;
     
 }
 
 #body-content {
-    width: 600px;
     float:left;
     margin: 20px 0px 0px 0px;
+    overflow: hidden;
 }
 
-#body-content h3 {
+.technology-h3 {
     letter-spacing: 1px;
     text-decoration: none;
     color: #80a0d4;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    float: left;
+
+}
+
+.hr {
+    overflow: hidden;
+    width: 1015px;
+    margin: 20px 0px 0px 0px;
+    float: left;
 }
 
 .body-top-hr {
     background-color: #e6ecf5;
-    width: 100%;
+    width: 97%;
     height: 1px;
     border: none;
     margin: 0px 0px 0px 0px;    
@@ -596,20 +666,22 @@ ul.slide-pager h2 {
 
 .body-bottom-hr {
     background-color: #ffffff;
-    width: 100%;
+    width: 97%;
     height: 1px;
     border: none;
     margin: 0px 0px 0px 0px;    
 }
 
 #technology-checklist {
-    margin-left: 0;
+    margin-left: 30px;
     padding-left: 0;
     list-style: none;
+    overflow: hidden;
 }
 
 #technology-checklist h4 {
-    letter-spacing: 1px;
+    letter-spacing: 3px;
+    font-size: 29px;
     line-height:40px;
     text-decoration: none;
     color: #727b87;
@@ -619,7 +691,8 @@ ul.slide-pager h2 {
 }
 
 #technology-checklist p {
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    font-size: 19px;
     line-height:40px;
     text-decoration: none;
     color: #86abe3;
@@ -633,6 +706,12 @@ ul#technology-checklist li {
     margin: 10px 0px 10px 0px;
     line-height: 40px;
     height: 40px;
+    border-bottom: 1px dotted #eee;
+    padding: 15px 0px 15px 50px;
+}
+
+ul#technology-checklist li:last-child {
+    border-bottom: none;
 }
 
 .checkmark {
@@ -643,58 +722,87 @@ ul#technology-checklist li {
     background-position: 0;
 }
 
-#right-sidebar {
-    background-color: #ffffff;
-    border: 1px solid #e1e1e1;
-    width: 390px;
+#features {
     float: left;
-    margin: 30px 0px 10px 20px;
-    -webkit-border-radius:6px;
-    -moz-border-radius:6px;
-    border-radius:6px;
+    margin: 10px 0px 10px 10px;
     overflow: hidden;
 }
 
-.sidebar-item {
+.featured-item {
+    width:310px;
+    height:110px;
     padding: 10px;
     overflow: hidden;
-}
-
-.sidebar-item img {
     float: left;
-    width: 76px;
+    margin: 5px 0px 5px 0px;
 }
 
-.sidebar-text {
+.featured-item img {
+    float: left;
+    width: 39px;
+}
+
+.icon {
+    width: 39px;
+    height:90px;
+    float: left;
+}
+
+.featured-item {
     float:left;
-    width: 280px;
-    margin-left: 13px;
 }
 
-#right-sidebar h4 {
+#features h4 {
     letter-spacing: 1px;
     font-size: 18px;
     text-decoration: none;
-    color: #9bcc9d;
+    color: #5d5d5d;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
+    float: left;
+    margin: 5px 0px 5px 11px;
 }
 
-#right-sidebar p {
+#features p {
+    width: 240px;
     letter-spacing: 1px;
     font-size: 13px;
     text-decoration: none;
     color: #779ddc;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
+    float: left;
+    margin: 5px 0px 5px 11px;
 }
 
-.sidebar-hr {
-    background-color: #e1e1e1;
-    width: 100%;
-    height: 1px;
-    border: none;
-    margin: 0px 0px 0px 0px;    
+#features-offered {
+    float: left;
+    margin: 40px 0px 40px 0px;
+    width: 95%;
+    padding: 10px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    background-color: #fff;
+    border: solid 1px #c8c8c8;
+    overflow: hidden;
+}
+
+.half {
+   float: left;
+   width: 47%;
+   margin-left: 1%;
+    height: 100%;
+   
+}
+
+.border-left {
+    border-left: 1px solid #dee3eb;
+    height: 100%;
+}
+.border-right {
+    border-left: 1px solid #ffffff;
+    height: 100%;
 }
 
 #sub-footer {
@@ -719,10 +827,8 @@ ul#technology-checklist li {
 }
 
 footer {
-    background: #6D97D5 url(../images/footer-pattern.png) repeat-x;
-    height: 50px;
-    border-top: 1px solid #ffffff;
     width: 100%;
+    height: 40px;
+    margin-top: 60px;
 }
-
 
